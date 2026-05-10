@@ -1,6 +1,9 @@
+// Instance Variables -  Non -static Data members
+// Static variables - static data members
 
-class Pair<K, V> {
-    public  K key;
+
+class Pair<K, V> { //K , V are type parameters
+    public  K key;  // Instance variables
     public  V value;
 
     public Pair(K key, V value) {
@@ -8,8 +11,6 @@ class Pair<K, V> {
         this.value = value;
     }
 }
-
-
 public class Generics2{
     public static void main(String[] args) {
 
