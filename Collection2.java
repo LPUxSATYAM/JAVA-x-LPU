@@ -1,5 +1,12 @@
 import java.util.TreeSet;
 
+/*
+Comparable is used to define natural sorting
+inside the class using compareTo() method but with OBJECTS.
+TreeSet automatically calls compareTo()
+to sort custom objects.
+*/
+
 class Person implements Comparable<Person> {
     String name;
 
@@ -22,8 +29,13 @@ public class Collection2 {
     public static void main(String[] args) {
         TreeSet<Person> set = new TreeSet<>();
 
-        set.add(new Person("Alice"));
-        set.add(new Person("Bob"));
+        Person p1 = new Person("Bob");
+        set.add(p1);
+
+        Person p2 = new Person("Alice");
+        set.add(p2);
+
+
         set.add(new Person("Charlie"));
 
         System.out.println(set);
