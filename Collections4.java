@@ -63,6 +63,7 @@ public class Collections4 {
         System.out.println("All Employees: " + employees);
 
 
+        //For - each loop
 
         for (Integer id : employees.keySet()) {
             System.out.println("Employee ID: " + id);

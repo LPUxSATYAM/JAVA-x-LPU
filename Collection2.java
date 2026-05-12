@@ -14,9 +14,9 @@ class Person implements Comparable<Person> {
         this.name = name;
     }
 
-    @Override
+    @Override // annotation for the compiler
     public int compareTo(Person other) {
-        return this.name.compareTo(other.name);
+        return name.compareTo(other.name);
     }
 
     @Override
@@ -31,6 +31,8 @@ public class Collection2 {
 
         Person p1 = new Person("Bob");
         set.add(p1);
+
+        // set.add(new Person("Bob"));
 
         Person p2 = new Person("Alice");
         set.add(p2);
